@@ -43,7 +43,7 @@ Node* leftRotate(Node* x){
 	y->height = max(getHeight(y->left),getHeight(y->right))+1;
 	return y;
 }
-Node* insertNode(Node* node, int val){
+Node* insertnode(Node* node, int val){
 	if(node == NULL){
 		node = newNode(val);
 		return node;
@@ -74,6 +74,6 @@ int main(){
 	Node* root =NULL;
 	for(int i=0;i<n;i++){
 		cin>>val;
-		root = insertNode(root,val);
+		root = insertnode(root,val);
 	}
 }
